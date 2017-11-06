@@ -118,8 +118,18 @@ thead {
 	white-space: nowrap;
 }
 
-.logo_detail {
+.icon_detail {
 	width: 15%;
+}
+
+.icon_pdf_download {
+	width: 5%;
+}
+
+.icon_point_hand {
+	width: 3%;
+	position: relative;
+	top: 7px;
 }
 
 #detail {
@@ -136,7 +146,8 @@ thead {
  	background-color: silver;
 }
 
-#detail_paragraphs p {
+#footer {
+	margin-top: 30px;
 }
 
 #detail_paragraphs h2 {

@@ -62,7 +62,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 /** page structure **/
 #wrapper {
   display: block;
-  width: 1250px;
+  max-width: 1250px;
+  min-width: 300px;
   background: #fff;
   margin: 0 auto;
   padding: 10px 17px;
@@ -167,5 +168,24 @@ p {
 }
 
 #detail_paragraphs h2 {
+	font-weight: bold;
+}
+
+header:not(.main):first-child {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: -19px -19px 19px -19px;
+	padding: 19px;
+	min-height: 36px;
+	border-bottom: 1px solid black;
+	background: gray;
+}
+header .menu-wrapper {
+    margin: 0 auto;
+}
+header a {
+    text-decoration: none;
+    color: white;
 	font-weight: bold;
 }

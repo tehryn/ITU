@@ -62,7 +62,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /** page structure **/
 #wrapper {
   display: block;
-  width: 1200px;
+  width: 1250px;
   background: #fff;
   margin: 0 auto;
   padding: 10px 17px;
@@ -118,6 +118,10 @@ thead {
 	white-space: nowrap;
 }
 
+p {
+	margin: 10px 0px 10px 0px;
+}
+
 .icon_detail {
 	width: 15%;
 }
@@ -127,9 +131,9 @@ thead {
 }
 
 .icon_point_hand {
-	width: 3%;
+	width: 5%;
 	position: relative;
-	top: 7px;
+	top: 3px;
 }
 
 #detail {
@@ -148,6 +152,18 @@ thead {
 
 #footer {
 	margin-top: 30px;
+	background-color: #005fb8;
+	padding: 15px 0px 15px 0px;
+}
+
+#footer a {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
 }
 
 #detail_paragraphs h2 {

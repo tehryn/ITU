@@ -63,7 +63,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 #wrapper {
   display: block;
   max-width: 1250px;
-  min-width: 300px;
+  min-width: 320px;
   background: #fff;
   margin: 0 auto;
   padding: 10px 17px;
@@ -171,21 +171,47 @@ p {
 	font-weight: bold;
 }
 
-header:not(.main):first-child {
+#page-header:not(.main):first-child {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: -19px -19px 19px -19px;
+	margin: -19px -17px 19px -17px;
 	padding: 19px;
 	min-height: 36px;
 	border-bottom: 1px solid black;
 	background: gray;
 }
-header .menu-wrapper {
+#page-header .menu-wrapper {
     margin: 0 auto;
+    font-size: 1.5em;
 }
-header a {
+@media (max-width: 700px) {
+    #page-header .menu-wrapper {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 2.0em;
+    }
+}
+@media (max-width: 500px) {
+    #page-header .menu-wrapper {
+        font-size: 1.0em;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 420px) {
+    #page-header .menu-wrapper {
+        font-size: 0.8em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
+#page-header a {
     text-decoration: none;
     color: white;
 	font-weight: bold;
+
 }

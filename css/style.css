@@ -202,7 +202,7 @@ p {
 	border-bottom: 1px solid black;
 	background: #0094ff;
 }
-#page-header .menu-wrapper {
+#menu-wrapper {
     margin: 0 auto;
     font-size: 1.5em;
 }
@@ -215,7 +215,7 @@ p {
     }
 }
 @media (max-width: 500px) {
-    #page-header .menu-wrapper {
+    #menu-wrapper {
         font-size: 1.0em;
     }
     h1 {
@@ -223,14 +223,15 @@ p {
     }
 }
 @media (max-width: 420px) {
-    #page-header .menu-wrapper {
+    #menu-wrapper {
         font-size: 0.8em;
     }
     h1 {
         font-size: 1.5em;
     }
 }
-#page-header a {
+
+#header a {
     text-decoration: none;
     color: white;
 	font-weight: bold;

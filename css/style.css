@@ -168,15 +168,7 @@ p {
 	text-decoration: underline;
 }
 
-#detail_paragraphs h2 {
-	font-weight: bold;
-}
-
-#header #menu-wrapper {
-	float: right;
-}
-
-#header:not(.main):first-child {
+#header {
 	display: flex;
 	align-items: center;
 	margin: 0px -17px 19px -17px;
@@ -185,12 +177,12 @@ p {
 	border-bottom: 1px solid black;
 	background: #0094ff;
 }
-#header #menu-wrapper {
-    margin: 0 auto;
+#menu-wrapper {
+	float: right;
     font-size: 1.5em;
 }
 @media (max-width: 700px) {
-    #page-header .menu-wrapper {
+    #menu-wrapper {
         font-size: 1.2em;
     }
     h2{
@@ -214,26 +206,29 @@ p {
     }
 }
 
-#header #menu-wrapper a {
+#menu-wrapper a {
     text-decoration: none;
     color: white;
 	font-weight: bold;
 
 }
 
-#header #logo a {
-    width: 176px;
-    height: 41px;
+#logo a {
+	height: 90px;
+	width: 87px;
     display: inline-block;
     background-image: url(../pictures/company_logo.png);
-    background-size: cover;
-	background-color: white;
+    background-size:contain;
 }
 
-#header #logo span {
+#logo span {
 	visibility: hidden;
 }
 
-#header #logo {
+#logo {
 	float: left;
+}
+
+.clear {
+	clear: both;
 }

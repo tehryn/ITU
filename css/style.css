@@ -66,7 +66,7 @@ table { border-collapse: collapse; border-spacing: 0; }
   min-width: 300px;
   background: #fff;
   margin: 0 auto;
-  padding: 10px 17px;
+  padding: 0px 17px;
   -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
 }
 
@@ -153,8 +153,9 @@ p {
 
 #footer {
 	margin-top: 30px;
-	background-color: #005fb8;
+	background-color: #0094ff;
 	padding: 15px 0px 15px 0px;
+	margin: 0px -17px;
 }
 
 #footer a {
@@ -171,20 +172,40 @@ p {
 	font-weight: bold;
 }
 
-header:not(.main):first-child {
+#logo a {
+    width: 176px;
+    height: 41px;
+    display: inline-block;
+    background-image: url(./pictures/company_logo.png);
+    background-size: cover;
+	background-color: white;
+}
+
+#logo span {
+	visibility: hidden;
+}
+
+#logo {
+	float: left;
+}
+
+#menu-wrapper {
+	float: right;
+}
+
+#header:not(.main):first-child {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	margin: -19px -19px 19px -19px;
+	margin: 0px -17px 19px -17px;
 	padding: 19px;
 	min-height: 36px;
 	border-bottom: 1px solid black;
-	background: gray;
+	background: #0094ff;
 }
-header .menu-wrapper {
+#header .menu-wrapper {
     margin: 0 auto;
 }
-header a {
+#header a {
     text-decoration: none;
     color: white;
 	font-weight: bold;

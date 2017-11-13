@@ -51,7 +51,7 @@ img { border: 0; max-width: 100%; }
 h1 {
   font-family: 'Amarante', Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 1.5em;
   line-height: 1.5em;
   margin-bottom: 10px;
   text-align: center;
@@ -210,7 +210,7 @@ p {
     #page-header .menu-wrapper {
         font-size: 1.2em;
     }
-    h1 {
+    h2{
         font-size: 2.0em;
     }
 }
@@ -218,7 +218,7 @@ p {
     #menu-wrapper {
         font-size: 1.0em;
     }
-    h1 {
+    h2 {
         font-size: 1.7em;
     }
 }
@@ -226,7 +226,7 @@ p {
     #menu-wrapper {
         font-size: 0.8em;
     }
-    h1 {
+    h2 {
         font-size: 1.5em;
     }
 }

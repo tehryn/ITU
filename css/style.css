@@ -172,24 +172,7 @@ p {
 	font-weight: bold;
 }
 
-#logo a {
-    width: 176px;
-    height: 41px;
-    display: inline-block;
-    background-image: url(./pictures/company_logo.png);
-    background-size: cover;
-	background-color: white;
-}
-
-#logo span {
-	visibility: hidden;
-}
-
-#logo {
-	float: left;
-}
-
-#menu-wrapper {
+#header #menu-wrapper {
 	float: right;
 }
 
@@ -202,7 +185,7 @@ p {
 	border-bottom: 1px solid black;
 	background: #0094ff;
 }
-#menu-wrapper {
+#header #menu-wrapper {
     margin: 0 auto;
     font-size: 1.5em;
 }
@@ -231,9 +214,26 @@ p {
     }
 }
 
-#header a {
+#header #menu-wrapper a {
     text-decoration: none;
     color: white;
 	font-weight: bold;
 
+}
+
+#header #logo a {
+    width: 176px;
+    height: 41px;
+    display: inline-block;
+    background-image: url(../pictures/company_logo.png);
+    background-size: cover;
+	background-color: white;
+}
+
+#header #logo span {
+	visibility: hidden;
+}
+
+#header #logo {
+	float: left;
 }

@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html { overflow-y: scroll; }
+html { overflow-y: scroll; min-width: 740px;}
 body {
   background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -78,7 +78,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 #keywords thead {
   cursor: pointer;
-  background: #c9dff0;
+  background: #5bb7ff;
 }
 #keywords thead tr th {
   font-weight: bold;
@@ -154,8 +154,12 @@ p {
 #footer {
 	margin-top: 30px;
 	background-color: #0094ff;
-	padding: 15px 0px 15px 0px;
+	padding: 15px;
 	margin: 0px -17px;
+}
+
+#footer img {
+	filter: invert(100%);
 }
 
 #footer a {
@@ -169,17 +173,24 @@ p {
 }
 
 #header {
-	display: flex;
-	align-items: center;
 	margin: 0px -17px 19px -17px;
 	padding: 19px;
 	min-height: 36px;
 	border-bottom: 1px solid black;
 	background: #0094ff;
 }
+h2 {
+	position: relative;
+	bottom: 95px;
+	left: 110px;
+	color: #f9efef;
+	font-size: 1.5em;
+}
 #menu-wrapper {
 	float: right;
     font-size: 1.5em;
+	position: relative;
+	top: 80px;
 }
 @media (max-width: 700px) {
     #menu-wrapper {
@@ -231,4 +242,9 @@ p {
 
 .clear {
 	clear: both;
+}
+
+.featureless {
+	color: #9d9d9d;
+	font-size: 0.8em;
 }

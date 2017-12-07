@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: middle;
   outline: none;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -13,238 +13,194 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html { overflow-y: scroll; min-width: 740px;}
+
+@font-face {
+    font-family: 'Quivira';
+    src: url('../fonts/Quivira.ttf'); /* http://www.fontspace.com/alexander-lange/quivira */
+}
+
+html {
+    overflow-y: auto;
+    overflow-x: auto;
+    min-width: 740px;
+}
+
 body {
-  background: #eee url('https://i.imgur.com/eeQeRmk.png'); /* https://subtlepatterns.com/weave/ */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1;
-  color: #585858;
-  padding: 22px 10px;
-  padding-bottom: 55px;
+    background: url('../pictures/background.jpg'); /* http://shop.paint-clicker.com/out/pictures/master/product/1/arte-lasur3dpalazzo265_thumb.jpg */
+    font-family: 'Quivira';
+    display: block;
+    margin: 20px 30px;
+    line-height: 1;
+    color: #fff;
 }
 
-::selection { background: #5f74a0; color: #fff; }
-::-moz-selection { background: #5f74a0; color: #fff; }
-::-webkit-selection { background: #5f74a0; color: #fff; }
+::selection { background: #fff; color: #232f98; }
+::-moz-selection { background: #fff; color: #232f98; }
+::-webkit-selection { background: #fff; color: #232f98; }
 
-br { display: block; line-height: 1.3em; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-ol, ul { list-style: none; }
-
-input, textarea {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: none;
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-strong, b { font-weight: bold; }
-
-img { border: 0; max-width: 100%; }
-
-h1 {
-  font-family: 'Amarante', Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin-bottom: 10px;
-  text-align: center;
+#main-body{
+    display: block;
+    max-width: 1250px;
+    min-width: 320px;
+    padding: 0px 17px;
+    margin: 0 auto;
 }
 
-table { border-collapse: collapse; border-spacing: 0; }
+#header h1 {
+    color: #333a79;
+    font-size: 3.5em;
+    font-weight: 500;
+}
 
-/** page structure **/
+#header #company-name {
+    display: inline-block;
+    padding: 1em;
+}
+
+#header #menu-wrapper {
+    background-color: rgba(212, 126, 63, 0.5);
+    height: 3em;
+
+    max-width: 1250px;
+    min-width: 320px;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+    #menu {
+        width: 100%;
+    }
+    #menu li {
+        display: inline-block;
+        padding: 1em 0;
+    }
+    #menu li + li {
+        background-image: url(../pictures/sep.png); /* http://icons.mysitemyway.com/legacy-icon/017876-blue-jelly-icon-symbols-shapes-shapes-diamond-frame/ */
+        background-size: 1em;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 1em;
+    }
+    #menu a {
+        color: rgb(51, 58, 121);
+        font-size: 1.2em;
+        font-weight: 700;
+        white-space: nowrap;
+        padding: 1em 2em;
+    }
+    #menu a:hover {
+        color: rgb(0, 0, 0);
+    }
+
 #wrapper {
-  display: block;
-  max-width: 1250px;
-  min-width: 320px;
-  background: #fff;
-  margin: 0 auto;
-  padding: 0px 17px;
+  background: rgb(51, 58, 121);
+  padding: 2em;
   -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
 }
 
-#keywords {
-  font-size: 0.8em;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-#keywords thead {
-  cursor: pointer;
-  background: #5bb7ff;
-}
-#keywords thead tr th {
-  font-weight: bold;
-  padding: 12px 30px;
-  padding-left: 42px;
-}
-#keywords thead tr th span {
-  padding-right: 20px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
-  background: #acc8dd;
-}
-
-#keywords thead tr th.headerSortUp span {
-  background-image: url('https://i.imgur.com/SP99ZPJ.png');
-}
-#keywords thead tr th.headerSortDown span {
-  background-image: url('https://i.imgur.com/RkA9MBo.png');
-}
-
-#keywords tbody tr {
-  color: #555;
-}
-#keywords tbody tr td {
-  text-align: center;
-  padding: 15px 10px;
-}
-#keywords tbody tr td.lalign {
-  text-align: left;
-}
-
-/*****************************************************************************/
-
-thead {
-	white-space: nowrap;
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin: 1em 0;
 }
 
 p {
-	margin: 10px 0px 10px 0px;
+    margin-bottom: 0.7em;
 }
 
-.icon_detail {
-	width: 15%;
+/* ----- UNIVERZALNI OHRANICENA TABULKA ----- */
+.ohranicena_tabulka {
+    display: block;
+    border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: hidden;
+    color: #000;
+    margin: 1em;
+}
+    .ohranicena_tabulka thead {
+        border: 1px solid black;
+        background-color: #4D7CD8;
+    }
+
+        .ohranicena_tabulka thead td {
+            border: 1px solid black;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px;
+            height: 30px;
+        }
+        .ohranicena_tabulka thead th {
+            border: 1px solid black;
+            font-weight: 700;
+            text-align: center;
+            padding: 10px;
+            height: 30px;
+        }
+    .ohranicena_tabulka tbody tr {
+        background-color: #fff;
+        text-align: center;
+    }
+    .ohranicena_tabulka tbody tr:nth-child(2n) {
+        background-color: rgb(217, 219, 255);
+    }
+    .ohranicena_tabulka tbody tr:hover {
+        background-color: rgb(103, 136, 251);
+    }
+    .ohranicena_tabulka tbody .lalign {
+        text-align: left;
+    }
+    .ohranicena_tabulka td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    .ohranicena_tabulka a {
+        margin: 0 auto;
+    }
+        .ohranicena_tabulka a img {
+            width: 30px;
+            height: 30px;
+        }
+
+/* ----- UNIVERZALNI NEOHRANICENA TABULKA ----- */
+.neohranicena_tabulka table {
+    margin-bottom: 10px;
 }
 
-.icon_pdf_download {
-	width: 5%;
-}
+    .neohranicena_tabulka tr {
+        height: 1.5em;
+    }
 
-.icon_point_hand {
-	width: 5%;
-	position: relative;
-	top: 3px;
-}
+    .neohranicena_tabulka td:first-child {
+        padding-right: 20px;
+        min-width: 8em;
+        width: 30%;
+    }
 
-#detail {
-	border-spacing: 10px;
-	border-collapse: separate;
-}
-
-#detail td:first-child {
-	font-weight: bold;
-	white-space: nowrap;
-}
-
-#keywords tr:hover {
- 	background-color: silver;
-}
-
+/* ----- FOOTER ----- */
 #footer {
-	margin-top: 30px;
-	background-color: #0094ff;
-	padding: 15px;
-	margin: 0px -17px;
+	background-color: rgba(212, 126, 63, 0.5);
+    padding: 15px;
+}
+#footer a {
+    color: #000;
+    padding: 15px;
 }
 
 #footer img {
-	filter: invert(100%);
-}
-
-#footer a {
-	color: #ffffff;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#footer a:hover {
-	text-decoration: underline;
-}
-
-#header {
-	margin: 0px -17px 19px -17px;
-	padding: 19px;
-	min-height: 36px;
-	border-bottom: 1px solid black;
-	background: #0094ff;
-}
-h2 {
-	position: relative;
-	bottom: 95px;
-	left: 110px;
-	color: #f9efef;
-	font-size: 1.5em;
-}
-#menu-wrapper {
-	float: right;
-    font-size: 1.5em;
-	position: relative;
-	top: 80px;
-}
-@media (max-width: 700px) {
-    #menu-wrapper {
-        font-size: 1.2em;
-    }
-    h2{
-        font-size: 2.0em;
-    }
-}
-@media (max-width: 500px) {
-    #menu-wrapper {
-        font-size: 1.0em;
-    }
-    h2 {
-        font-size: 1.7em;
-    }
-}
-@media (max-width: 420px) {
-    #menu-wrapper {
-        font-size: 0.8em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-}
-
-#menu-wrapper a {
-    text-decoration: none;
-    color: white;
-	font-weight: bold;
-
-}
-
-#logo a {
-	height: 90px;
-	width: 87px;
     display: inline-block;
-    background-image: url(../pictures/company_logo.png);
-    background-size:contain;
+    height: 2em;
+    width: 2em;
 }
-
-#logo span {
-	visibility: hidden;
-}
-
-#logo {
-	float: left;
-}
-
-.clear {
-	clear: both;
-}
-
-.featureless {
-	color: #9d9d9d;
-	font-size: 0.8em;
+#footer span {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.5em;
 }

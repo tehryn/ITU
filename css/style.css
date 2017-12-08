@@ -183,7 +183,10 @@ p {
         min-width: 8em;
         width: 30%;
     }
-
+    .neohranicena_tabulka img {
+        height: 3em;
+        width: 3em;
+    }
 /* ----- FOOTER ----- */
 #footer {
 	background-color: rgba(212, 126, 63, 0.5);
@@ -204,3 +207,26 @@ p {
     font-size: 1.2em;
     padding: 0.5em;
 }
+
+/* ----- BUTTON ----- */
+button, .button, input[type="button"], input[type="submit"] {
+    display: inline-block;
+	padding: 10px 20px;
+	min-width: 100px;
+	line-height: 44px - 22px;
+	text-align: center;
+	font-size: 1.1rem;
+    margin-bottom: 20px;
+
+    color: #000;
+    background: rgb(218, 144, 89);
+    border: 1px solid rgb(218, 144, 89);
+    border-radius: 5px;
+}
+    button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+        text-decoration: none;
+
+        color: #000;
+        background: rgb(212, 126, 62);
+        border-color: rgb(212, 126, 62);
+    }

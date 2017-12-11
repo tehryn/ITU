@@ -1,0 +1,42 @@
+sipky
+podivej se do includes/header.php a vytvor vsechny stranky na ktere se tam odkazuje. udelej i formularovky, at mi staci jen v php odchytavat parametry
+
+Dopln tyto prace:
+<tr>
+	<td class="lalign">Převod znakové řeči na text</td>
+	<td>Informatika</td>
+	<td>Super Ajťaci s.r.o.</td>
+	<td>Brno</td>
+	<td>100-150kč/h</td>
+	<td>Ano</td>
+	<td><a href="./detail.html"><img src="./pictures/detail_icon.png" class="icon_detail"></a></td>
+</tr>
+<tr>
+	<td class="lalign">Jak se stát zbytečným dinosaurem na Měsíci</td>
+	<td>Filozofie</td>
+	<td>Spisovatele a. s.</td>
+	<td>Brno</td>
+	<td>Práce není finančně ohodnocena</td>
+	<td>Ne</td>
+	<td><a href="./detail.html"><img src="./pictures/detail_icon.png" class="icon_detail"></a></td>
+</tr>
+<tr>
+	<td class="lalign">Automatické učení AI při hraní her</td>
+	<td>Informatika</td>
+	<td>ProGamesa</td>
+	<td>Brno</td>
+	<td>360kč/h</td>
+	<td>Ano</td>
+	<td><a href="./detail.html"><img src="./pictures/detail_icon.png" class="icon_detail"></a></td>
+</tr>
+<tr>
+	<td class="lalign">Návrh nového mostu přes dálnici</td>
+	<td>Architektura</td>
+	<td>Bořek stavitel s.r.o</td>
+	<td>Praha</td>
+	<td>1000 kč</td>
+	<td>Ano</td>
+	<td><a href="./detail.html"><img src="./pictures/detail_icon.png" class="icon_detail"></a></td>
+</tr>
+
+externi zdroj https://cs.wikibooks.org/wiki/PHP_prakticky/Odstran%C4%9Bn%C3%AD_diakritiky

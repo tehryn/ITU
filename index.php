@@ -1,27 +1,14 @@
+<?php include 'includes/db.php' ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>Převod znakové řeči na text</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
+		<?php include 'includes/head.php' ?>
+		<title>Sunny Night</title>
 	</head>
-
 	<body>
 		<div id="main-body">
-			<div id="header">
-				<a id="company-name" href="./index.html"><h1>Sunny Night</h1></a>
-				<div id="menu-wrapper">
-					<ul id="menu">
-						<li><a href="./index.html">Domů</a></li>
-						<li><a href="./prehled_temat.html">Přehled témat</a></li>
-						<li><a href="./prehled_temat.html">Registrace</a></li>
-						<li><a href="./prehled_temat.html">Kontakt</a></li>
-						<li><a href="./prehled_temat.html">O nás</a></li>
-					</ul>
-				</div>
-			</div>
-
+			<?php include 'includes/header.php' ?>
 			<div id="wrapper">
 				<h2>Registrace, zadávání a správa odborných prací</h2>
 					<p>
